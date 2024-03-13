@@ -1,0 +1,382 @@
+/* Variables */
+:root{
+  --green: #0eb582;
+  --light-green: #f0fdfa;
+  --light-color: #777;
+  --light-white: #eee;
+  --black: #444;
+  --white: #fff;
+  --border: .1rem solid var(--green);
+  --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1)
+}
+
+/* Global Styles */
+* {
+  font-family: 'Nunito', sans-serif;
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+  outline: none; 
+  border: none;
+  text-decoration: none;
+  transition: all .2s linear;
+}
+
+/* 
+
+title-text {
+  text-transform: capitalize;
+  color: var(--black);
+}
+
+graph-text {
+  line-height: 2;
+  color: var(--light-color);
+}
+
+*/
+
+
+/* HTML Styles */
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--green);
+}
+
+/* Header section */
+.header{
+  position: sticky;
+  top: 0; 
+  left: 0; 
+  right: 0;
+  background: var(--white);
+  box-shadow: var(--box-shadow);
+  padding: 2rem 10%;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+
+  .logo{
+    margin-right: auto;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    color: var(--black);
+  }
+
+  .navbar {
+    position: relative;
+
+    #close-navbar{
+      position: absolute;
+      top: 1.5rem; right: 2rem;
+      font-size: 4rem;
+      cursor: pointer;
+      color: var(--black);
+      display: none;
+
+      &:hover{
+        transform: rotate(90deg);
+      }
+    }
+
+    a{
+      margin-right: 2rem;
+      font-size: 2rem;
+      text-transform: capitalize;
+      color: var(--black);
+  
+      &:hover{
+        color: var(--green)
+      }
+    }
+  }
+
+  .icons div{
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: var(--black);
+    margin-right: 1.6rem;
+
+    &:hover{
+      color: var(--green);
+    }
+  }
+
+  #menu-btn{
+    display: none;
+  }
+}
+
+/* Button Styles */
+.btn{
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+  border: var(--border);
+  background: var(--light-green);
+  color: var(--green);
+  cursor: pointer;
+  text-transform: capitalize;
+
+  &:hover{
+    background: var(--green);
+    color: var(--white);
+  }
+}
+
+section{
+  padding: 5rem 10%;
+}
+
+
+.home{
+  padding: 0;
+
+  .slide{
+    display: flex;
+    align-items: center;
+    height: 60rem;
+    background-size: cover !important;
+    background-position: center !important;
+
+    .content{
+      width: 60rem;
+
+      h3{
+        font-size: 6rem;
+        text-transform: capitalize;
+
+
+      }
+    }
+  }
+
+  .home-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10rem 0 15rem 0;
+
+    .content{
+      box-sizing: border-box;
+      margin-left: auto;
+      margin-right: auto;
+
+      h1{
+        text-align: center;
+        margin: 0 auto;
+        width: 75rem;
+        font-size: 6.6rem;
+        text-transform: capitalize;
+        line-height: 1.19;
+      }
+
+      p{
+        font-size: 1.5rem;
+        text-align: center;
+        color: var(--light-color);
+        width: 50rem;
+        margin: 2rem auto;
+      }
+      .btn{
+        margin: 0 auto;
+        display: block;
+        width: fit-content;
+      }
+    }
+  }
+}
+
+
+
+.footer{
+  background: var(--light-green);
+
+  .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+
+    .box{
+      padding: 1rem;
+    }
+
+    .box h3{
+      font-size: 2.2rem;
+      text-transform: capitalize;
+      color: var(--black);
+      padding: 1rem 0;
+    }
+
+    .box i{
+      color: var(--green);
+    }
+
+    .box .link{
+      font-size: 1.7rem;
+      line-height: 2;
+      padding: .5rem 0;
+      color: var(--light-color);
+      display: block;
+
+      &:hover{
+        color: var(--green);
+        text-decoration: underline;
+      }
+    }
+
+    .box p{
+      font-size: 1.5rem;
+      color: var(--light-color);
+      line-height: 2;
+      padding: 1rem 0;
+    }
+
+    .email{
+      width: 100%;
+      padding: 1.2rem 1.4rem;
+      font-size: 1.6rem;
+      border: var(--border);
+      margin-bottom: 1rem;
+    }
+  }
+
+  .credit{
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 3rem;
+    border-top: var(--border);
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: var(--black);
+
+    span{
+      color: var(--green);
+    }
+  }
+
+  .share{
+    margin-top: 1rem;
+
+    a{
+      height: 4.5rem;
+      width: 4.5rem;
+      line-height: 4.5rem;
+      font-size: 2rem;
+      background-color: var(--green);
+      color: var(--white);
+      margin-right: .3rem;
+      text-align: center;
+
+      &:hover{
+        background-color: var(--black);
+      }
+    }
+
+  }
+
+}
+
+
+/* Media queries - responsiveness */
+@media (min-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust minmax value as needed */
+    gap: 2rem;
+  }
+}
+
+
+@media (max-width:1200px) {
+  .header{
+    padding: 2rem 5%;
+  }
+
+  section{
+    padding: 3rem 5%;
+  }
+
+  .home .home-header{
+    padding: 5rem 0 10rem 0;
+  }
+
+  .home .home-header .content h1{
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px){
+  html{
+    font-size: 55%;
+  }
+  
+  .header{
+    padding: 2rem;
+  }
+
+  section{
+    padding: 5rem 2rem;
+  }
+}
+
+@media (max-width: 768px){
+  .header{
+    #menu-btn{
+      display: inline-block;
+    }
+
+    .navbar{
+      position: fixed;
+      top: 0; right: -105%;
+      width: 30rem;
+      background: var(--white);
+      height: 100%;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+
+      #close-navbar{
+        display: block; /* Show close navbar button */
+      }
+
+      &.active{
+        box-shadow: 0 0 0 100vw rgba(0,0,0,.1); /* Overlay effect */
+        right: 0; /* Move navbar to the right to show */
+      }
+
+      a{
+        display: block;
+        margin: 1rem 0;
+        text-align: center;
+        font-size: 3rem;
+      }
+    }
+  }
+  .home .home-header .content h1{
+    font-size: 6.1rem;
+  }
+
+  .home .home-header .content p{
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 450px){
+  html{
+    font-size: 50%;
+  }
+}
