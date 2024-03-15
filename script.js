@@ -10,3 +10,37 @@ document.querySelector("#menu-btn").onclick = () => {
 document.querySelector("#close-navbar").onclick = () => {
   navbar.classList.remove("active");
 };
+
+var swiper = new Swiper(".home-courses-slider", {
+  loop: true,
+  grabCursor: true,
+  spaceBetween: 20,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    991: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+var swiper = new Swiper(".teachers-slider", {
+  loop: true,
+  grabCursor: true,
+  spaceBetween: 20,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    991: {
+      slidesPerView: 3,
+    },
+  },
+});

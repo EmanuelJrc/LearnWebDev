@@ -13,6 +13,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Swiperjs CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <!-- Importing google font Nunito -->
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
@@ -28,9 +33,9 @@
       <nav class="navbar">
         <div id="close-navbar" class="fas fa-times"></div>
         <a href="index.html">Home</a>
-        <a href="/screens/courses.html">Courses</a>
-        <a href="/screens/about.html">About</a>
-        <a href="/screens/contact.html">Contact</a>
+        <a href="screens/courses.html">Courses</a>
+        <a href="screens/about.html">About</a>
+        <a href="screens/contact.html">Contact</a>
       </nav>
 
       <div class="icons">
@@ -42,51 +47,274 @@
     <!-- Home Seaction starts -->
 
     <main class="home" id="home">
+      <!-- Home Header start -->
       <header class="home-header">
         <div class="content">
-          <h1>Launch a career in tech for the <span>AI future</span></h1>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto
-            cum id aliquam vel rerum laborum sint ad deserunt quia quod,
-            repellat temporibus provident corporis delectus eum. Earum quo
-            molestias a!
-          </p>
+          <h1>Coding the Future: Web Dev + <span>AI Synergy</span></h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
           <a href="#" class="btn">get started</a>
         </div>
       </header>
+      <!-- Home Header end -->
 
-      <div class="home-slider">
-        <div class="w">
-          <section
-            class="slide"
-            style="background: url(img/about.jpg) no-repeat"
-          >
-            <div class="content">
-              <h3>You will find the best courses here!</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Architecto cum id aliquam vel rerum laborum sint ad deserunt
-                quia quod, repellat temporibus provident corporis delectus eum.
-                Earum quo molestias a!
-              </p>
-              <a href="#" class="btn">get started</a>
-            </div>
-          </section>
+      <!-- Companies section start -->
 
-          <section class="slide" style="background: url(img/bg.png) no-repeat">
-            <div class="content">
-              <h3>You will find the best courses here!</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Architecto cum id aliquam vel rerum laborum sint ad deserunt
-                quia quod, repellat temporibus provident corporis delectus eum.
-                Earum quo molestias a!
-              </p>
-              <a href="#" class="btn">get started</a>
-            </div>
-          </section>
+      <section class="companies">
+        <div class="grid-container">
+          <p class="companies-title">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
+            quod quisquam quos dolorem
+          </p>
+          <div class="logos-wrapper">
+            <img
+              loading="lazy"
+              height="28"
+              width="120"
+              class="company-image"
+              src="https://images.careerfoundry.com/public/home_page/companies/amazon-logo.webp"
+              alt="amazon-logo"
+            />
+            <img
+              loading="lazy"
+              height="28"
+              width="120"
+              class="company-image"
+              src="https://images.careerfoundry.com/public/home_page/companies/booking-logo.webp"
+              alt="booking-logo"
+            />
+            <img
+              loading="lazy"
+              height="28"
+              width="120"
+              class="company-image"
+              src="https://images.careerfoundry.com/public/home_page/companies/ebay-logo.webp"
+              alt="ebay-logo"
+            />
+            <img
+              loading="lazy"
+              height="28"
+              width="120"
+              class="company-image"
+              src="https://images.careerfoundry.com/public/home_page/companies/facebook-logo.webp"
+              alt="facebook-logo"
+            />
+            <img
+              loading="lazy"
+              height="28"
+              width="120"
+              class="company-image"
+              src="https://images.careerfoundry.com/public/home_page/companies/google-logo.webp"
+              alt="google-logo"
+            />
+            <img
+              loading="lazy"
+              height="28"
+              width="120"
+              class="company-image"
+              src="https://images.careerfoundry.com/public/home_page/companies/netflix-logo.webp"
+              alt="netflix-logo"
+            />
+            <img
+              loading="lazy"
+              height="28"
+              width="120"
+              class="company-image"
+              src="https://images.careerfoundry.com/public/home_page/companies/paypal-logo.webp"
+              alt="paypal-logo"
+            />
+            <img
+              loading="lazy"
+              height="28"
+              width="120"
+              class="company-image"
+              src="https://images.careerfoundry.com/public/home_page/companies/visa-logo.webp"
+              alt="visa-logo"
+            />
+          </div>
         </div>
-      </div>
+      </section>
+      <!-- Companies section end -->
+
+      <!-- Home card section start -->
+
+      <section class="usp-cards">
+        <div class="grid-container">
+          <div class="grid-row">
+            <div class="usp-card-item">
+              <div class="usp-card-text-container">
+                <div class="usp-card-text">
+                  <h2>Break into tech from any background</h2>
+                  <p>
+                    Learn new tech skills from scratch. We work with skilled
+                    industry experts to create learning materials that equip you
+                    with the knowledge and in-demand skills needed to land the
+                    job you want. So even if you’re a complete beginner, our
+                    online study platform's cutting-edge curriculum is built for
+                    you.
+                  </p>
+                  <a href="#" class="btn">find out more</a>
+                </div>
+              </div>
+              <div class="usp-card-image-container">
+                <img
+                  loading="lazy"
+                  width="616"
+                  height="616"
+                  src="https://d3mm2s9r15iqcv.cloudfront.net/en/wp-content/uploads/2024/03/image-1.webp"
+                  alt="homepage-usp-cards"
+                />
+              </div>
+            </div>
+            <div class="usp-card-item">
+              <div class="usp-card-text-container">
+                <div class="usp-card-text">
+                  <h2>Break into tech from any background</h2>
+                  <p>
+                    Learn new tech skills from scratch. We work with skilled
+                    industry experts to create learning materials that equip you
+                    with the knowledge and in-demand skills needed to land the
+                    job you want. So even if you’re a complete beginner, our
+                    online study platform's cutting-edge curriculum is built for
+                    you.
+                  </p>
+                  <a href="#" class="btn">find out more</a>
+                </div>
+              </div>
+              <div class="usp-card-image-container">
+                <img
+                  loading="lazy"
+                  width="616"
+                  height="616"
+                  src="https://d3mm2s9r15iqcv.cloudfront.net/en/wp-content/uploads/2024/03/image-1.webp"
+                  alt="homepage-usp-cards"
+                />
+              </div>
+            </div>
+            <div class="usp-card-item">
+              <div class="usp-card-text-container">
+                <div class="usp-card-text">
+                  <h2>Break into tech from any background</h2>
+                  <p>
+                    Learn new tech skills from scratch. We work with skilled
+                    industry experts to create learning materials that equip you
+                    with the knowledge and in-demand skills needed to land the
+                    job you want. So even if you’re a complete beginner, our
+                    online study platform's cutting-edge curriculum is built for
+                    you.
+                  </p>
+                  <a href="#" class="btn">find out more</a>
+                </div>
+              </div>
+              <div class="usp-card-image-container">
+                <img
+                  loading="lazy"
+                  width="616"
+                  height="616"
+                  src="https://d3mm2s9r15iqcv.cloudfront.net/en/wp-content/uploads/2024/03/image-1.webp"
+                  alt="homepage-usp-cards"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Home card section end -->
+
+      <!-- Home courses slider section start -->
+      <section class="home-courses">
+        <h1 class="heading">our popular courses</h1>
+
+        <div class="swiper home-courses-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide">
+              <div class="image">
+                <img src="img/course-1-1.png" alt="" />
+                <h3>web development</h3>
+              </div>
+              <div class="content">
+                <h3>web development</h3>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Laborum, ratione?
+                </p>
+                <a href="#" class="btn">read more</a>
+              </div>
+            </div>
+            <div class="swiper-slide slide">
+              <div class="image">
+                <img src="img/course-1-2.png" alt="" />
+                <h3>web development</h3>
+              </div>
+              <div class="content">
+                <h3>web development</h3>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Laborum, ratione?
+                </p>
+                <a href="#" class="btn">read more</a>
+              </div>
+            </div>
+            <div class="swiper-slide slide">
+              <div class="image">
+                <img src="img/course-1-3.png" alt="" />
+                <h3>web development</h3>
+              </div>
+              <div class="content">
+                <h3>web development</h3>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Laborum, ratione?
+                </p>
+                <a href="#" class="btn">read more</a>
+              </div>
+            </div>
+            <div class="swiper-slide slide">
+              <div class="image">
+                <img src="img/course-1-4.png" alt="" />
+                <h3>web development</h3>
+              </div>
+              <div class="content">
+                <h3>web development</h3>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Laborum, ratione?
+                </p>
+                <a href="#" class="btn">read more</a>
+              </div>
+            </div>
+            <div class="swiper-slide slide">
+              <div class="image">
+                <img src="img/course-1-5.png" alt="" />
+                <h3>web development</h3>
+              </div>
+              <div class="content">
+                <h3>web development</h3>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Laborum, ratione?
+                </p>
+                <a href="#" class="btn">read more</a>
+              </div>
+            </div>
+            <div class="swiper-slide slide">
+              <div class="image">
+                <img src="img/course-1-6.png" alt="" />
+                <h3>web development</h3>
+              </div>
+              <div class="content">
+                <h3>web development</h3>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Laborum, ratione?
+                </p>
+                <a href="#" class="btn">read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Home courses slider section end -->
     </main>
 
     <!-- Home Seaction ends -->
@@ -112,28 +340,28 @@
 
         <div class="box">
           <h3>quick links</h3>
-          <a href="index.html" class="link">home</a>
-          <a href="/screens/about.html" class="link">about</a>
-          <a href="/screens/courses.html" class="link">courses</a>
-          <a href="/screens/contact.html" class="link">contact</a>
+          <a href="index.html" class="link">Home</a>
+          <a href="about.html" class="link">About</a>
+          <a href="courses.html" class="link">Courses</a>
+          <a href="contact.html" class="link">Contact</a>
         </div>
 
         <div class="box">
           <h3>useful links</h3>
-          <a href="#" class="link">help center</a>
-          <a href="#" class="link">ask questions</a>
-          <a href="#" class="link">send feedback</a>
-          <a href="#" class="link">private policy</a>
-          <a href="#" class="link">terms of use</a>
+          <a href="#" class="link">Help center</a>
+          <a href="#" class="link">Ask questions</a>
+          <a href="#" class="link">Send feedback</a>
+          <a href="#" class="link">Privacy policy</a>
+          <a href="#" class="link">Terms of use</a>
         </div>
         <div class="box">
-          <h3>newsletter</h3>
-          <p>subscribe for latest updates</p>
+          <h3>Newsletter</h3>
+          <p>Subscribe for latest updates</p>
           <form action="">
             <input
               type="email"
               name=""
-              placeholder="enter your email"
+              placeholder="Enter your email"
               id=""
               class="email"
             />
@@ -148,7 +376,9 @@
     </section>
     <!-- Footer section ends -->
 
-    <!-- Calling the script.js file -->
+    <!-- Swiper js link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Calling the script.js -->
     <script src="script.js"></script>
   </body>
 </html>

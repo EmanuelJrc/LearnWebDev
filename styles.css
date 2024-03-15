@@ -1,12 +1,12 @@
 /* Variables */
 :root{
-  --green: #0eb582;
-  --light-green: #f0fdfa;
+  --blue: #00ABE4;
+  --light-blue: #E9F1FA;
   --light-color: #777;
   --light-white: #eee;
   --black: #444;
-  --white: #fff;
-  --border: .1rem solid var(--green);
+  --white: #FFFFFF;
+  --border: .1rem solid var(--blue);
   --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1)
 }
 
@@ -52,14 +52,39 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--green);
+  background: var(--blue);
 }
 
-/* Header section */
-.header{
+img{
+  user-select: none;
+}
+
+
+/* Button Styles */
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+  border: var(--border);
+  background: var(--white);
+  color: var(--blue);
+  cursor: pointer;
+  text-transform: capitalize;
+  border-radius: 2rem;
+}
+
+.btn:hover {
+  background: var(--blue);
+  color: var(--white);
+}
+
+
+/* Header section start */
+.header {
   position: sticky;
-  top: 0; 
-  left: 0; 
+  top: 0;
+  left: 0;
   right: 0;
   background: var(--white);
   box-shadow: var(--box-shadow);
@@ -67,73 +92,349 @@ html {
   display: flex;
   align-items: center;
   z-index: 1000;
+}
 
-  .logo{
-    margin-right: auto;
-    font-size: 2.5rem;
-    text-transform: capitalize;
-    color: var(--black);
+.header .logo {
+  margin-right: auto;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  color: var(--black);
+}
+
+.header .logo i {
+  color: var(--blue);
+}
+
+.header .navbar {
+  position: relative;
+}
+
+.header .navbar #close-navbar {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  font-size: 4rem;
+  cursor: pointer;
+  color: var(--black);
+  display: none;
+}
+
+.header .navbar #close-navbar:hover {
+  transform: rotate(90deg);
+}
+
+.header .navbar a {
+  margin-right: 2rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: var(--black);
+}
+
+.header .navbar a:hover {
+  color: var(--blue);
+}
+
+.header .icons div {
+  cursor: pointer;
+  font-size: 2.5rem;
+  color: var(--black);
+  margin-right: 1.6rem;
+}
+
+.header .icons div:hover {
+  color: var(--blue);
+}
+
+.header #menu-btn {
+  display: none;
+}
+/* Header section end */
+
+
+/* Home section */
+.home{
+  padding: 0;
+  background: #F6F5F5;
+}
+.home .slide{
+  display: flex;
+  align-items: center;
+  height: 60rem;
+  background-size: cover !important;
+  background-position: center !important;
+}
+.home .slide .content h3{
+  font-size: 5rem;
+  color: var(--white);
+  text-transform: capitalize;
+}
+.home .slide .content p{    
+  line-height: 1.6rem;
+  color: var(--light-white);
+  padding: 1rem 0;
+}
+
+.home-header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rem 0 3rem 0;
+}
+
+.home-header .content{
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+.home-header .content h1{
+  text-align: center;
+  margin: 0 auto;
+  width: 75rem;
+  font-size: 6.6rem;
+  text-transform: capitalize;
+  line-height: 1.19;
+}
+
+.home-header .content span{
+  background: linear-gradient(90deg, #4ba7f8, #381563);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home-header .content p{
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--light-color);
+  width: 50rem;
+  margin: 2rem auto;
+}
+.home-header .content .btn{
+  margin: 0 auto;
+  display: flex;
+  width: 21rem;
+  justify-content: space-around;
+  background: var(--blue);
+  color: var(--white);
+}
+
+.grid-container{
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.grid-row{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.companies{
+  padding: .5rem 2rem 0 2rem;
+}
+
+.companies-title{
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--light-color);
+  margin: 2rem auto;
+}
+
+
+.logos-wrapper{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.logos-wrapper .company-image{
+  height: 3rem;
+  width: auto;
+  margin: 1rem;
+}
+
+
+.usp-cards{
+  padding: 4rem 0;
+}
+
+.usp-card-item{
+  display: flex;
+  margin-bottom: 10rem;
+  gap: 3rem;
+}
+
+.usp-card-text-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.usp-card-text-container h2{
+  font-weight: 600;
+  font-size: 51px;
+  line-height: 1.25;
+}
+
+.usp-card-text-container p{
+  font-size: 2rem;
+  line-height: 2;
+  color: var(--light-color);
+}
+
+.usp-card-text-container a{
+  margin-top: 3rem;
+}
+
+.home .usp-cards .usp-card-image-container{
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 20px;
+  padding-left: 5rem;
+}
+
+.home .usp-cards .usp-card-image-container img{
+  width: fit-content;
+  border-radius: 20px;
+  height: auto;
+  border-style: none;
+
+}
+
+.home-courses{
+  padding: 5rem 15%;
+}
+
+.home-courses .slide{
+  text-align: center;
+  position: relative;
+  background: var(--light-blue);
+  overflow: hidden;
+
+  &:hover .content{
+    bottom: 0;
   }
 
-  .navbar {
-    position: relative;
+  .image{
+    padding: 2rem;
 
-    #close-navbar{
-      position: absolute;
-      top: 1.5rem; right: 2rem;
-      font-size: 4rem;
-      cursor: pointer;
-      color: var(--black);
-      display: none;
-
-      &:hover{
-        transform: rotate(90deg);
-      }
+    img{
+      width: 100%;
+      margin-bottom: 1.5rem;
     }
 
-    a{
-      margin-right: 2rem;
+    h3{
       font-size: 2rem;
       text-transform: capitalize;
       color: var(--black);
-  
-      &:hover{
-        color: var(--green)
-      }
     }
   }
 
-  .icons div{
-    cursor: pointer;
-    font-size: 2.5rem;
-    color: var(--black);
-    margin-right: 1.6rem;
+  .content{
+    position: absolute;
+    bottom: -100%; right: 0; left: 0;
+    background: var(--blue);
+    padding: 2rem 3rem;
 
-    &:hover{
-      color: var(--green);
+    h3{
+      font-size: 2rem;
+      color: var(--white);
     }
-  }
 
-  #menu-btn{
-    display: none;
+    p{
+      padding: 1rem 0;
+      font-size: 1.5rem;
+      line-height: 2;
+      color: var(--light-white);
+    }
+
+    .btn:hover{
+      background: var(--black);
+    }
   }
 }
 
-/* Button Styles */
-.btn{
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 1rem 3rem;
-  font-size: 1.8rem;
-  border: var(--border);
-  background: var(--light-green);
-  color: var(--green);
-  cursor: pointer;
+/* Home courses slider section start */
+.heading{
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 3.5rem;
   text-transform: capitalize;
+  color: var(--black);
+}
+/* Home courses slider section end */
 
-  &:hover{
-    background: var(--green);
-    color: var(--white);
+
+.about{
+  padding: 5rem 15%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+
+  .image{
+    flex: 1 1 40rem;
+
+    img{
+      width: 100%;
+    }
+  }
+
+  .content{
+    flex: 1 1 40rem;
+
+    .about-title{
+      font-size: 3rem;
+      text-transform: capitalize;
+      color: var(--black);
+    }
+
+    p{
+      font-size: 1.5rem;
+      line-height: 2;
+      color: var(--light-color);
+      padding: 1rem 0;
+    }
+
+    .icons-container{
+      margin-top: 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+
+      .icons{
+        text-align: center;
+        border: var(--border);
+        background: var(--light-blue);
+        padding: 3rem 2rem;
+
+        img{
+          height: 5rem;
+          margin-bottom: .5rem;
+        }
+
+        h3{
+          padding: .5rem 0;
+          font-size: 3rem;
+          text-transform: capitalize;
+          color: var(--black);
+        }
+
+        span{
+          font-size: 1.5rem;
+          line-height: 2;
+          color: var(--light-color);
+        }
+      }
+    }
   }
 }
 
@@ -142,68 +443,9 @@ section{
 }
 
 
-.home{
-  padding: 0;
-
-  .slide{
-    display: flex;
-    align-items: center;
-    height: 60rem;
-    background-size: cover !important;
-    background-position: center !important;
-
-    .content{
-      width: 60rem;
-
-      h3{
-        font-size: 6rem;
-        text-transform: capitalize;
-
-
-      }
-    }
-  }
-
-  .home-header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10rem 0 15rem 0;
-
-    .content{
-      box-sizing: border-box;
-      margin-left: auto;
-      margin-right: auto;
-
-      h1{
-        text-align: center;
-        margin: 0 auto;
-        width: 75rem;
-        font-size: 6.6rem;
-        text-transform: capitalize;
-        line-height: 1.19;
-      }
-
-      p{
-        font-size: 1.5rem;
-        text-align: center;
-        color: var(--light-color);
-        width: 50rem;
-        margin: 2rem auto;
-      }
-      .btn{
-        margin: 0 auto;
-        display: block;
-        width: fit-content;
-      }
-    }
-  }
-}
-
-
-
 .footer{
-  background: var(--light-green);
+  background: var(--light-blue);
+  padding: 5rem 8%;
 
   .box-container{
     display: grid;
@@ -222,7 +464,7 @@ section{
     }
 
     .box i{
-      color: var(--green);
+      color: var(--blue);
     }
 
     .box .link{
@@ -233,7 +475,7 @@ section{
       display: block;
 
       &:hover{
-        color: var(--green);
+        color: var(--blue);
         text-decoration: underline;
       }
     }
@@ -246,7 +488,7 @@ section{
     }
 
     .email{
-      width: 100%;
+      width: 80%;
       padding: 1.2rem 1.4rem;
       font-size: 1.6rem;
       border: var(--border);
@@ -264,7 +506,7 @@ section{
     color: var(--black);
 
     span{
-      color: var(--green);
+      color: var(--blue);
     }
   }
 
@@ -276,7 +518,7 @@ section{
       width: 4.5rem;
       line-height: 4.5rem;
       font-size: 2rem;
-      background-color: var(--green);
+      background-color: var(--blue);
       color: var(--white);
       margin-right: .3rem;
       text-align: center;
@@ -291,7 +533,114 @@ section{
 }
 
 
+/* About Page styles start */
+.heading-link{
+  padding: 5rem 10%;
+  text-align: center;
+  background: url(img/about.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.heading-link h3{
+  font-size: 4rem;
+  text-transform: capitalize;
+  color: var(--black);
+}
+
+.heading-link p{
+  font-size: 2rem;
+  line-height: 2;
+  color: var(--light-color);
+}
+
+.heading-link p a{
+  color: var(--blue);
+
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+.teachers{
+  padding: 5rem 15%;
+}
+
+.teachers .slide{
+  text-align: center;
+  width: 30rem;
+
+  &:hover{
+    .image{
+      img{
+        background: var(--blue);
+      }
+
+      .share{
+        bottom: 0;
+      }
+    }
+  }
+}
+
+.teachers .content{
+  display: flex;
+  padding-top: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.teachers .content h3{
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: var(--black);
+}
+
+.teachers .content span{
+  font-size: 1.5rem;
+  line-height: 2;
+  color: var(--light-color);
+}
+
+.teachers .image{
+  position: relative;
+  overflow: hidden;
+}
+
+.teachers .image img{
+  background: var(--light-blue);
+  width: 100%;
+}
+
+.teachers .image .share{
+  position: absolute;
+  bottom: -10rem; left: 0; right: 0;
+  background: rgba(0,0,0,.8);
+  padding: 2rem;
+}
+
+.teachers .image .share a{
+  font-size: 3rem;
+  margin: 0 1rem;
+  color: var(--white);
+}
+
+.teachers .image .share a:hover{
+  color: var(--blue);
+}
+
+/* About Page styles end */
+
+
 /* Media queries - responsiveness */
+@media only screen and (min-width: 1279px){
+  .grid-container{
+    width: calc(1279px - 16px);
+    max-width: 100%;
+  }
+}
+
 @media (min-width: 768px) {
   .grid {
     display: grid;
@@ -311,12 +660,26 @@ section{
   }
 
   .home .home-header{
-    padding: 5rem 0 10rem 0;
+    padding: 5rem 0 1rem 0;
   }
 
   .home .home-header .content h1{
     width: 100%;
   }
+
+  .home .home-header .content p{
+    width: 100%;
+  }
+
+  .home .usp-card-item{
+    display: contents;
+  }
+
+  .home-courses{
+    padding: 2rem;
+    margin: 0;
+  }
+
 }
 
 @media (max-width: 991px){
@@ -371,12 +734,83 @@ section{
   }
 
   .home .home-header .content p{
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
+
+  .home .companies .logos-wrapper{
+    margin: 0 auto;
+  }
+
+  .home .usp-cards{
+    padding: 5rem 4%;
+  }
+
+  .home .usp-card-item{
+    margin-bottom: 3rem;
+    display: block;
+  }
+
+  .usp-cards .grid-container{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .home .usp-card-text-container{
+    justify-content: flex-start;
+    margin-bottom: 3.5rem;
+  }
+
+  .usp-card-text-container h2{
+    font-size: 3.5rem;
+    line-height: 1.42;
+    margin-bottom: 1rem;
+  }
+
+  .home .usp-cards .usp-card-image-container{
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    padding-left: 0;
+    max-width: 100%;
+  }
+
+  .usp-card-image-container img{
+    max-width: 100%;
+  }
+
+  .home-courses{
+    padding: 4rem;
+    margin: 0;
+  }
+
+  .footer{
+    padding: 2rem 2%;
+  }
+
+  .home .slide .content h3{
+    font-size: 3rem;
+  }
+
+  .about{
+    padding: 5rem 5%;
+  }
+
+  .teachers{
+    padding: 5rem 6%;
+  }
+
 }
 
 @media (max-width: 450px){
   html{
     font-size: 50%;
+  }
+
+  .heading{
+    font-size: 3rem;
+  }
+
+  .about .content .about-title{
+    font-size: 4rem;
   }
 }
