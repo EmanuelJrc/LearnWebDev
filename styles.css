@@ -59,6 +59,10 @@ img{
   user-select: none;
 }
 
+main{
+  background: #F6F5F5;
+}
+
 
 /* Button Styles */
 .btn {
@@ -71,7 +75,7 @@ img{
   color: var(--blue);
   cursor: pointer;
   text-transform: capitalize;
-  border-radius: 2rem;
+  border-radius: 8rem;
 }
 
 .btn:hover {
@@ -215,6 +219,7 @@ img{
   margin: 0 auto;
   display: flex;
   width: 21rem;
+  padding: 1.5rem;
   justify-content: space-around;
   background: var(--blue);
   color: var(--white);
@@ -376,6 +381,7 @@ img{
 
 .about{
   padding: 5rem 15%;
+  padding-bottom: 0;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -505,7 +511,7 @@ section{
     text-transform: capitalize;
     color: var(--black);
 
-    span{
+    span a{
       color: var(--blue);
     }
   }
@@ -631,6 +637,183 @@ section{
 }
 
 /* About Page styles end */
+
+/* Courses Page styles start */
+.courses .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 3rem;
+} 
+
+.courses .box-container .box .image{
+  height: 25rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.courses .box-container .box .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.courses .box-container .box .image:hover img{
+  transform: scale(1.1);
+}
+
+.courses .box-container .box{
+  &.hide{
+    display: none;
+  }
+}
+
+.courses .box-container .box .image h3{
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: var(--black);
+  position: absolute;
+  top: 1rem; left: 1rem;
+  padding: .5rem 1.5rem;
+  background: var(--white);
+}
+
+.courses .box-container .content{
+  padding: 2rem;
+  text-align: center;
+  border: var(--border);
+}
+
+.courses .box-container .content h3{
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: var(--black);
+}
+
+.courses .box-container .content p{
+  padding: 1rem 0;
+  font-size: 1.6rem;
+  line-height: 2;
+  color: var(--light-color);
+}
+
+.courses .box-container .content .icons{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: var(--border);
+}
+
+.courses .box-container .content .icons span{
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: var(--black);
+}
+
+.courses .box-container .content .icons span i{
+  color: var(--blue);
+  padding-right: .5rem;
+}
+
+.courses .load-more{
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* Courses Page styles end */
+
+
+/* Contact Page styles start */
+
+.contact .icons-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  margin-bottom: 3rem;
+}
+
+.contact .icons-container .icons{
+  text-align: center;
+  padding: 3rem 2rem;
+  border: var(--border);
+  background: var(--light-blue);
+}
+
+.contact .icons-container .icons i{
+  height: 6rem;
+  width: 6rem;
+  line-height: 6rem;
+  font-size: 2rem;
+  border-radius: 50%;
+  margin-bottom: .5rem;
+  color: var(--white);
+  background: var(--blue);
+}
+
+.contact .icons-container .icons h3{
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: var(--black);
+  padding: .5rem 0;
+}
+
+.contact .icons-container .icons p{
+  font-size: 1.5rem;
+  line-height: 2;
+  color: var(--light-color);
+}
+
+.contact .row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.contact .row .image{
+  flex: 1 1 40rem;
+}
+
+.contact .row .image img{
+  width: 100%;
+}
+
+.contact form{
+  flex: 1 1 40rem;
+  border: var(--border);
+  padding: 2rem;
+}
+
+.contact form h3{
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  color: var(--black);
+  padding-bottom: 1rem;
+}
+
+.contact form .box{
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  border: var(--border);
+  font-size: 1.6rem;
+  margin: .7rem 0;
+
+  &:focus{
+    background: var(--blue);
+    color: var(--white);
+
+    &::placeholder{
+      color: var(--light-white);
+    }
+  }
+}
+
+.contact textarea{
+  height: 15rem;
+  resize: none;
+}
+
+/* Contact Page styles end */
 
 
 /* Media queries - responsiveness */
