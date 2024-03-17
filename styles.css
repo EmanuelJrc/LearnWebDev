@@ -22,21 +22,6 @@
   transition: all .2s linear;
 }
 
-/* 
-
-title-text {
-  text-transform: capitalize;
-  color: var(--black);
-}
-
-graph-text {
-  line-height: 2;
-  color: var(--light-color);
-}
-
-*/
-
-
 /* HTML Styles */
 html {
   font-size: 62.5%;
@@ -101,16 +86,11 @@ main{
 .header .logo {
   margin-right: auto;
   font-size: 2.5rem;
-  text-transform: capitalize;
   color: var(--black);
 }
 
 .header .logo i {
   color: var(--blue);
-}
-
-.header .navbar {
-  position: relative;
 }
 
 .header .navbar #close-navbar {
@@ -156,10 +136,6 @@ main{
 
 
 /* Home section */
-.home{
-  padding: 0;
-  background: #F6F5F5;
-}
 .home .slide{
   display: flex;
   align-items: center;
@@ -186,7 +162,6 @@ main{
 }
 
 .home-header .content{
-  box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
   padding-right: 2rem;
@@ -226,7 +201,6 @@ main{
 }
 
 .grid-container{
-  box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
   padding-right: 1rem;
@@ -234,7 +208,6 @@ main{
 }
 
 .grid-row{
-  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -321,7 +294,6 @@ main{
 
 .home-courses .slide{
   text-align: center;
-  position: relative;
   background: var(--light-blue);
   overflow: hidden;
 
@@ -380,8 +352,7 @@ main{
 
 
 .about{
-  padding: 5rem 15%;
-  padding-bottom: 0;
+  padding: 2rem 15%;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -538,29 +509,23 @@ section{
 
 }
 
-
 /* About Page styles start */
 .heading-link{
-  padding: 5rem 10%;
   text-align: center;
-  background: url(img/about.png) no-repeat;
+  background: url(img/bg.png) no-repeat;
   background-size: cover;
   background-position: center;
 
 }
-
 .heading-link h3{
   font-size: 4rem;
-  text-transform: capitalize;
   color: var(--black);
 }
-
 .heading-link p{
   font-size: 2rem;
   line-height: 2;
   color: var(--light-color);
 }
-
 .heading-link p a{
   color: var(--blue);
 
@@ -568,11 +533,6 @@ section{
     text-decoration: underline;
   }
 }
-
-.teachers{
-  padding: 5rem 15%;
-}
-
 .teachers .slide{
   text-align: center;
   width: 30rem;
@@ -589,84 +549,70 @@ section{
     }
   }
 }
-
 .teachers .content{
   display: flex;
   padding-top: 1rem;
   align-items: center;
   justify-content: space-between;
 }
-
 .teachers .content h3{
   font-size: 2rem;
   text-transform: capitalize;
   color: var(--black);
 }
-
 .teachers .content span{
   font-size: 1.5rem;
   line-height: 2;
   color: var(--light-color);
 }
-
 .teachers .image{
   position: relative;
   overflow: hidden;
 }
-
 .teachers .image img{
   background: var(--light-blue);
   width: 100%;
 }
-
 .teachers .image .share{
   position: absolute;
   bottom: -10rem; left: 0; right: 0;
   background: rgba(0,0,0,.8);
   padding: 2rem;
 }
-
 .teachers .image .share a{
   font-size: 3rem;
   margin: 0 1rem;
   color: var(--white);
 }
-
 .teachers .image .share a:hover{
   color: var(--blue);
 }
-
 /* About Page styles end */
 
 /* Courses Page styles start */
 .courses .box-container{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   gap: 3rem;
 } 
-
 .courses .box-container .box .image{
   height: 25rem;
   overflow: hidden;
   position: relative;
 }
-
 .courses .box-container .box .image img{
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
-
 .courses .box-container .box .image:hover img{
   transform: scale(1.1);
 }
-
 .courses .box-container .box{
   &.hide{
     display: none;
   }
 }
-
 .courses .box-container .box .image h3{
   font-size: 1.5rem;
   text-transform: capitalize;
@@ -676,26 +622,22 @@ section{
   padding: .5rem 1.5rem;
   background: var(--white);
 }
-
 .courses .box-container .content{
   padding: 2rem;
   text-align: center;
   border: var(--border);
 }
-
 .courses .box-container .content h3{
   font-size: 2rem;
   text-transform: capitalize;
   color: var(--black);
 }
-
 .courses .box-container .content p{
   padding: 1rem 0;
   font-size: 1.6rem;
   line-height: 2;
   color: var(--light-color);
 }
-
 .courses .box-container .content .icons{
   display: flex;
   align-items: center;
@@ -704,23 +646,19 @@ section{
   padding-top: 2rem;
   border-top: var(--border);
 }
-
 .courses .box-container .content .icons span{
   font-size: 1.5rem;
   text-transform: capitalize;
   color: var(--black);
 }
-
 .courses .box-container .content .icons span i{
   color: var(--blue);
   padding-right: .5rem;
 }
-
 .courses .load-more{
   margin-top: 2rem;
   text-align: center;
 }
-
 /* Courses Page styles end */
 
 
@@ -797,24 +735,13 @@ section{
   border: var(--border);
   font-size: 1.6rem;
   margin: .7rem 0;
-
-  &:focus{
-    background: var(--blue);
-    color: var(--white);
-
-    &::placeholder{
-      color: var(--light-white);
-    }
-  }
 }
 
 .contact textarea{
   height: 15rem;
   resize: none;
 }
-
 /* Contact Page styles end */
-
 
 /* Media queries - responsiveness */
 @media only screen and (min-width: 1279px){
@@ -822,6 +749,8 @@ section{
     width: calc(1279px - 16px);
     max-width: 100%;
   }
+
+
 }
 
 @media (min-width: 768px) {
@@ -875,7 +804,7 @@ section{
   }
 
   section{
-    padding: 5rem 2rem;
+    padding: 5rem 4rem;
   }
 }
 
@@ -920,10 +849,6 @@ section{
     font-size: 2.4rem;
   }
 
-  .home .companies .logos-wrapper{
-    margin: 0 auto;
-  }
-
   .home .usp-cards{
     padding: 5rem 4%;
   }
@@ -963,7 +888,6 @@ section{
 
   .home-courses{
     padding: 4rem;
-    margin: 0;
   }
 
   .footer{
@@ -975,11 +899,7 @@ section{
   }
 
   .about{
-    padding: 5rem 5%;
-  }
-
-  .teachers{
-    padding: 5rem 6%;
+    padding: 5rem 4rem;
   }
 
 }
